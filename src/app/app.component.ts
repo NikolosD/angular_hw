@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {CounterComponent} from "./counter/counter.component";
+import {TodoListComponent} from "./todo-list/todo-list.component";
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  styleUrls: ['./app.component.css'],
+  imports: [
+    CounterComponent,
+    TodoListComponent
+  ]
 })
 export class AppComponent {
-  title = 'angularDavaleba';
+
 }
