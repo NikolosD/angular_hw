@@ -26,7 +26,7 @@ export class TodoListComponent implements OnInit {
 
   removeTodo(id: number) {
     const index = this.todos.findIndex(todo => todo.id === id);
-    if (index !== -1) { // Check if item exists
+    if (index !== -1) {
       this.todos.splice(index, 1);
     }
   }
